@@ -47,9 +47,9 @@ export function RecipeList() {
         });
     }, [recipes, debouncedQuery]);
 
-    // Render each item
+    // Render each item – `_index` is intentionally unused
     const ItemRenderer = useCallback(
-        (index: number, recipe: RecipeMeta) => (
+        (_index: number, recipe: RecipeMeta) => (
             <Link key={recipe.slug} to={`/recipe/${recipe.slug}`}>
                 <RecipeCard {...recipe} />
             </Link>
@@ -105,7 +105,7 @@ export function RecipeList() {
                         return ItemRenderer(index, recipe);
                     }}
                     listClassName="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
-                    className="custom-scrollbar" // 👈 hides the scrollbar
+                    className="custom-scrollbar"
                     style={{ height: '70vh' }}
                 />
             )}
