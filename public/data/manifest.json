@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "vegetable-dalia",
+    "title": "Savory Vegetable Dalia with Tadka",
+    "time": 30,
+    "tags": [
+      "Breakfast",
+      "Indian",
+      "Healthy"
+    ],
+    "image": "/images/dalia.jpg",
+    "description": "A nutritious cracked wheat porridge packed with veggies and finished with an aromatic tempering."
+  },
+  {
+    "slug": "spaghetti-aglio-olio",
+    "title": "Spaghetti Aglio e Olio",
+    "time": 15,
+    "tags": [
+      "Pasta",
+      "Italian",
+      "Vegetarian"
+    ],
+    "image": "/images/spaghetti.jpg",
+    "description": "A classic Italian pasta dish with garlic, olive oil, and chili flakes."
+  }
+]
