@@ -1,7 +1,7 @@
 ---
 title: "Bengali Dal"
 time: 25
-tags: ["Lunch", "Dinner", "Bengali", "Vegetarian", "Dal"]
+tags: ["Vegetarian", "Dal","Basic"]
 image: "/images/bengali-dal.jpg"
 description: "A simple and comforting Bengali-style dal made with moong or masoor lentils, finished with a fragrant tempering."
 ---

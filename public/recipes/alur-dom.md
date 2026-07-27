@@ -1,7 +1,7 @@
 ---
 title: "Alur Dom"
 time: 35
-tags: ["Lunch", "Dinner", "Bengali", "Vegetarian"]
+tags: ["Potato", "Curry"]
 image: "/images/alur-dom.jpg"
 description: "A classic Bengali-style potato curry made with aromatic spices and cooked quickly in the Nutricook Smart Pot 2."
 ---

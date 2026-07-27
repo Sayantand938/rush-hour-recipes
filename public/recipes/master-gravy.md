@@ -1,7 +1,7 @@
 ---
 title: "Master Gravy"
 time: 40
-tags: ["Indian", "Gravy", "Nutricook"]
+tags: ["Curry", "Gravy"]
 image: "/images/all-purpose-gravy.jpg"
 description: "An optimized, rich onion-tomato base gravy pressure-cooked in the Nutricook Smart Pot. Perfect for quick weeknight meal prep and freezing."
 ---

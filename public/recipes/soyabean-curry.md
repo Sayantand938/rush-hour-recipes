@@ -1,7 +1,7 @@
 ---
 title: "Bengali Soyabean Curry"
 time: 35
-tags: ["Lunch", "Dinner", "Bengali", "Vegetarian", "High Protein"]
+tags: ["Curry"]
 image: "/images/soyabean-curry.jpg"
 description: "A hearty Bengali-style soyabean curry made with soya chunks in a rich onion-tomato gravy. High in protein, budget-friendly, and perfect with rice or roti."
 ---

@@ -1,7 +1,7 @@
 ---
 title: "French Fries"
 time: 35
-tags: ["Snack", "Side Dish", "Air Fryer", "Vegetarian"]
+tags: ["Snack","Air Fryer"]
 image: "/images/air-fryer-french-fries.jpg"
 description: "Golden, crispy air fryer French fries with very little oil. Crispy on the outside, fluffy on the inside."
 ---

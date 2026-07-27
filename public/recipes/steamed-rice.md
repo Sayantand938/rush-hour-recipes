@@ -1,7 +1,7 @@
 ---
 title: "Steamed Rice"
 time: 20
-tags: ["Lunch", "Dinner", "Indian", "Basic"]
+tags: ["Basic","Rice"]
 image: "/images/steamed-rice.jpg"
 description: "Perfectly cooked fluffy steamed rice made effortlessly in the Nutricook Smart Pot 2."
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Vegetable Dalia"
 time: 30
-tags: ["Breakfast", "Indian", "Healthy"]
+tags: ["Vegetables", "Wheat"]
 image: "/images/dalia.jpg"
 description: "A wholesome cracked wheat porridge cooked with fresh vegetables and finished with a fragrant tempering."
 ---

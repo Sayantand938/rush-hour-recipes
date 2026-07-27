@@ -1,7 +1,7 @@
 ---
 title: "Chicken Curry"
 time: 50
-tags: ["Lunch", "Dinner", "Bengali", "Chicken", "High Protein"]
+tags: ["Chicken", "Curry"]
 image: "/images/bengali-chicken-curry.jpg"
 description: "A classic Bengali-style chicken curry with potatoes, cooked in a rich onion-tomato gravy and finished with aromatic garam masala."
 ---
