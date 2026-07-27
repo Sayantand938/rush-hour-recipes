@@ -1,7 +1,9 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { Link } from 'react-router-dom';
+import { VirtuosoGrid } from 'react-virtuoso';
+import { useDebounce } from 'use-debounce';
 import { RecipeCard } from './RecipeCard';
-import { Zap, Search, LoaderCircle } from 'lucide-react'; // 👈 Added LoaderCircle
+import { Zap, Search, LoaderCircle } from 'lucide-react';
 
 type RecipeMeta = {
     slug: string;
@@ -16,6 +18,7 @@ export function RecipeList() {
     const [recipes, setRecipes] = useState<RecipeMeta[]>([]);
     const [loading, setLoading] = useState(true);
     const [searchQuery, setSearchQuery] = useState('');
+    const [debouncedQuery] = useDebounce(searchQuery, 300);
 
     // Fetch manifest
     useEffect(() => {
@@ -31,11 +34,10 @@ export function RecipeList() {
             });
     }, []);
 
-    // Filter recipes based on search query (title or tags)
+    // Filter recipes (debounced)
     const filteredRecipes = useMemo(() => {
-        if (!searchQuery.trim()) return recipes;
-
-        const query = searchQuery.toLowerCase().trim();
+        if (!debouncedQuery.trim()) return recipes;
+        const query = debouncedQuery.toLowerCase().trim();
         return recipes.filter((recipe) => {
             const titleMatch = recipe.title.toLowerCase().includes(query);
             const tagMatch = recipe.tags.some((tag) =>
@@ -43,9 +45,18 @@ export function RecipeList() {
             );
             return titleMatch || tagMatch;
         });
-    }, [recipes, searchQuery]);
+    }, [recipes, debouncedQuery]);
 
-    // Loading state – now with a spinner
+    // Render each item
+    const ItemRenderer = useCallback(
+        (index: number, recipe: RecipeMeta) => (
+            <Link key={recipe.slug} to={`/recipe/${recipe.slug}`}>
+                <RecipeCard {...recipe} />
+            </Link>
+        ),
+        []
+    );
+
     if (loading) {
         return (
             <div className="flex min-h-[50vh] flex-col items-center justify-center gap-3">
@@ -65,8 +76,6 @@ export function RecipeList() {
                         Rush Hour Recipes
                     </h1>
                 </div>
-
-                {/* Search Bar */}
                 <div className="relative w-full sm:w-64">
                     <Search className="absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
                     <input
@@ -79,7 +88,7 @@ export function RecipeList() {
                 </div>
             </div>
 
-            {/* Recipe Grid */}
+            {/* Virtualized Grid with hidden scrollbar */}
             {filteredRecipes.length === 0 ? (
                 <div className="flex min-h-[30vh] flex-col items-center justify-center text-center">
                     <p className="text-sm text-muted-foreground">
@@ -89,13 +98,16 @@ export function RecipeList() {
                     </p>
                 </div>
             ) : (
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {filteredRecipes.map((recipe) => (
-                        <Link key={recipe.slug} to={`/recipe/${recipe.slug}`}>
-                            <RecipeCard {...recipe} />
-                        </Link>
-                    ))}
-                </div>
+                <VirtuosoGrid
+                    totalCount={filteredRecipes.length}
+                    itemContent={(index) => {
+                        const recipe = filteredRecipes[index];
+                        return ItemRenderer(index, recipe);
+                    }}
+                    listClassName="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+                    className="custom-scrollbar" // 👈 hides the scrollbar
+                    style={{ height: '70vh' }}
+                />
             )}
         </div>
     );
