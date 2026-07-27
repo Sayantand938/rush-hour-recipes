@@ -1,7 +1,100 @@
 [
   {
+    "slug": "alur-dom",
+    "title": "Alur Dom",
+    "time": 35,
+    "tags": [
+      "Lunch",
+      "Dinner",
+      "Bengali",
+      "Vegetarian"
+    ],
+    "image": "/images/alur-dom.jpg",
+    "description": "A classic Bengali-style potato curry made with aromatic spices and cooked quickly in the Nutricook Smart Pot 2."
+  },
+  {
+    "slug": "bengali-daal",
+    "title": "Bengali Dal",
+    "time": 25,
+    "tags": [
+      "Lunch",
+      "Dinner",
+      "Bengali",
+      "Vegetarian",
+      "Dal"
+    ],
+    "image": "/images/bengali-dal.jpg",
+    "description": "A simple and comforting Bengali-style dal made with moong or masoor lentils, finished with a fragrant tempering."
+  },
+  {
+    "slug": "soyabean-curry",
+    "title": "Bengali Soyabean Curry",
+    "time": 35,
+    "tags": [
+      "Lunch",
+      "Dinner",
+      "Bengali",
+      "Vegetarian",
+      "High Protein"
+    ],
+    "image": "/images/soyabean-curry.jpg",
+    "description": "A hearty Bengali-style soyabean curry made with soya chunks in a rich onion-tomato gravy. High in protein, budget-friendly, and perfect with rice or roti."
+  },
+  {
+    "slug": "chicken-curry",
+    "title": "Chicken Curry",
+    "time": 50,
+    "tags": [
+      "Lunch",
+      "Dinner",
+      "Bengali",
+      "Chicken",
+      "High Protein"
+    ],
+    "image": "/images/bengali-chicken-curry.jpg",
+    "description": "A classic Bengali-style chicken curry with potatoes, cooked in a rich onion-tomato gravy and finished with aromatic garam masala."
+  },
+  {
+    "slug": "french-fries",
+    "title": "French Fries",
+    "time": 35,
+    "tags": [
+      "Snack",
+      "Side Dish",
+      "Air Fryer",
+      "Vegetarian"
+    ],
+    "image": "/images/air-fryer-french-fries.jpg",
+    "description": "Golden, crispy air fryer French fries with very little oil. Crispy on the outside, fluffy on the inside."
+  },
+  {
+    "slug": "master-gravy",
+    "title": "Master Gravy",
+    "time": 40,
+    "tags": [
+      "Indian",
+      "Gravy",
+      "Nutricook"
+    ],
+    "image": "/images/all-purpose-gravy.jpg",
+    "description": "An optimized, rich onion-tomato base gravy pressure-cooked in the Nutricook Smart Pot. Perfect for quick weeknight meal prep and freezing."
+  },
+  {
+    "slug": "steamed-rice",
+    "title": "Steamed Rice",
+    "time": 20,
+    "tags": [
+      "Lunch",
+      "Dinner",
+      "Indian",
+      "Basic"
+    ],
+    "image": "/images/steamed-rice.jpg",
+    "description": "Perfectly cooked fluffy steamed rice made effortlessly in the Nutricook Smart Pot 2."
+  },
+  {
     "slug": "vegetable-dalia",
-    "title": "Savory Vegetable Dalia with Tadka",
+    "title": "Vegetable Dalia",
     "time": 30,
     "tags": [
       "Breakfast",
@@ -9,18 +102,6 @@
       "Healthy"
     ],
     "image": "/images/dalia.jpg",
-    "description": "A nutritious cracked wheat porridge packed with veggies and finished with an aromatic tempering."
-  },
-  {
-    "slug": "spaghetti-aglio-olio",
-    "title": "Spaghetti Aglio e Olio",
-    "time": 15,
-    "tags": [
-      "Pasta",
-      "Italian",
-      "Vegetarian"
-    ],
-    "image": "/images/spaghetti.jpg",
-    "description": "A classic Italian pasta dish with garlic, olive oil, and chili flakes."
+    "description": "A wholesome cracked wheat porridge cooked with fresh vegetables and finished with a fragrant tempering."
   }
 ]
