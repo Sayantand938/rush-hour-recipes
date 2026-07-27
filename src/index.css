@@ -137,13 +137,12 @@
    Custom: Hide scrollbar in recipe grid
    ========================================== */
 .custom-scrollbar {
+  will-change: transform;
+  /* 👈 compositor layer */
   scrollbar-width: none;
-  /* Firefox */
   -ms-overflow-style: none;
-  /* Internet Explorer / Edge */
 }
 
 .custom-scrollbar::-webkit-scrollbar {
   display: none;
-  /* Chrome, Safari, Opera */
 }
