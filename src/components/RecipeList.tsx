@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { RecipeCard } from './RecipeCard';
-import { Zap, Search } from 'lucide-react'; // 👈 changed Bolt → Zap
+import { Zap, Search, LoaderCircle } from 'lucide-react'; // 👈 Added LoaderCircle
 
 type RecipeMeta = {
     slug: string;
@@ -45,11 +45,12 @@ export function RecipeList() {
         });
     }, [recipes, searchQuery]);
 
-    // Loading state
+    // Loading state – now with a spinner
     if (loading) {
         return (
-            <div className="flex min-h-[50vh] items-center justify-center text-sm text-muted-foreground">
-                Loading recipes...
+            <div className="flex min-h-[50vh] flex-col items-center justify-center gap-3">
+                <LoaderCircle className="size-8 animate-spin text-muted-foreground" strokeWidth={1.5} />
+                <p className="text-sm text-muted-foreground">Loading your recipes...</p>
             </div>
         );
     }
@@ -59,7 +60,7 @@ export function RecipeList() {
             {/* Header */}
             <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex items-center gap-3 border-b border-border/50 pb-2 sm:border-b-0 sm:pb-0">
-                    <Zap className="size-7 text-primary" strokeWidth={1.5} /> {/* 👈 Zap icon */}
+                    <Zap className="size-7 text-primary" strokeWidth={1.5} />
                     <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
                         Rush Hour Recipes
                     </h1>

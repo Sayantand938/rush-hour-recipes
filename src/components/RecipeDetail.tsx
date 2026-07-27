@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, LoaderCircle } from 'lucide-react'; // 👈 Added LoaderCircle
 
 export function RecipeDetail() {
     const { slug } = useParams<{ slug: string }>();
@@ -27,14 +27,20 @@ export function RecipeDetail() {
             });
     }, [slug]);
 
-    if (loading) return <div className="p-6 text-center">Loading recipe...</div>;
+    if (loading) {
+        return (
+            <div className="flex min-h-[50vh] flex-col items-center justify-center gap-3">
+                <LoaderCircle className="size-8 animate-spin text-muted-foreground" strokeWidth={1.5} />
+                <p className="text-sm text-muted-foreground">Loading recipe...</p>
+            </div>
+        );
+    }
 
     return (
         <div className="container mx-auto max-w-3xl p-4">
             <Link to="/" className="inline-flex items-center text-muted-foreground hover:underline">
                 <ArrowLeft className="mr-1 size-4" /> Back to all recipes
             </Link>
-            {/* 👇 Clean, standard prose classes with dark mode support */}
             <article className="prose prose-neutral dark:prose-invert mt-4 max-w-none">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
             </article>
