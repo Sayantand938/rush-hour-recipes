@@ -1,5 +1,5 @@
 ---
-title: "Bengali Soyabean Curry"
+title: "Soyabean Curry"
 time: 35
 tags: ["Curry"]
 image: "/images/soyabean-curry.jpg"
