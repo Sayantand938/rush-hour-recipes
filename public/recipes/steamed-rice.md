@@ -6,7 +6,7 @@ image: "/images/steamed-rice.jpg"
 description: "Perfectly cooked fluffy steamed rice made effortlessly in the Nutricook Smart Pot 2."
 ---
 
-# Ingredients
+## Ingredients
 
 - 1 cup white rice (Basmati, Gobindobhog, or any regular rice)
 - 1¼ cups water (for Basmati)
@@ -14,7 +14,7 @@ description: "Perfectly cooked fluffy steamed rice made effortlessly in the Nutr
 - ½ tsp salt (optional)
 - 1 tsp ghee or butter (optional)
 
-# Instructions
+## Instructions
 
 1. Rinse the rice under cold running water **3–4 times**, or until the water runs mostly clear.
 
@@ -38,7 +38,7 @@ description: "Perfectly cooked fluffy steamed rice made effortlessly in the Nutr
 
 10. Let the rice rest for **2–3 minutes** before serving for the best texture.
 
-# Serving Suggestions
+## Serving Suggestions
 
 Serve hot with:
 - Dal
@@ -49,7 +49,7 @@ Serve hot with:
 - Chicken Curry
 - Fish Curry
 
-# Notes
+## Notes
 
 - Always rinse the rice well to remove excess starch for fluffier grains.
 - Soaking the rice helps it cook more evenly and results in longer, separate grains.

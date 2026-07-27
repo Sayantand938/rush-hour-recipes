@@ -6,7 +6,7 @@ image: "/images/bengali-dal.jpg"
 description: "A simple and comforting Bengali-style dal made with moong or masoor lentils, finished with a fragrant tempering."
 ---
 
-# Ingredients
+## Ingredients
 
 - 1 cup moong dal (yellow split moong) **or** masoor dal (red lentils)
 - 3 cups water
@@ -15,7 +15,7 @@ description: "A simple and comforting Bengali-style dal made with moong or masoo
 - ½ tsp turmeric powder
 - Salt, to taste
 
-## For the Tempering (Tadka)
+### For the Tempering (Tadka)
 
 - 1 tbsp ghee or mustard oil
 - 1 tsp cumin seeds
@@ -24,12 +24,12 @@ description: "A simple and comforting Bengali-style dal made with moong or masoo
 - 1 pinch asafoetida (hing) *(optional)*
 - 1 tsp grated ginger *(optional, but recommended)*
 
-## For Garnish
+### For Garnish
 
 - 1 tbsp chopped fresh coriander
 - 1 tsp ghee (optional)
 
-# Instructions
+## Instructions
 
 ### If Using Moong Dal
 
@@ -57,7 +57,7 @@ description: "A simple and comforting Bengali-style dal made with moong or masoo
 
 11. Garnish with chopped coriander and an extra teaspoon of ghee, if desired.
 
-# Serving Suggestions
+## Serving Suggestions
 
 Serve hot with:
 - Steamed Rice
@@ -67,7 +67,7 @@ Serve hot with:
 - Papad
 - Pickle
 
-# Notes
+## Notes
 
 - **Moong dal** has a nutty flavor and is traditionally roasted before cooking.
 - **Masoor dal** does not require roasting and cooks more quickly.

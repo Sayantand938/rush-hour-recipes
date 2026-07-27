@@ -6,7 +6,7 @@ image: "/images/air-fryer-french-fries.jpg"
 description: "Golden, crispy air fryer French fries with very little oil. Crispy on the outside, fluffy on the inside."
 ---
 
-# Ingredients
+## Ingredients
 
 - 2 medium potatoes (Russet or any starchy potato)
 - 1 tbsp oil
@@ -15,14 +15,14 @@ description: "Golden, crispy air fryer French fries with very little oil. Crispy
 - ¼ tsp black pepper (optional)
 - ½ tsp garlic powder (optional)
 
-## For Serving
+### For Serving
 
 - Tomato ketchup
 - Peri Peri seasoning (optional)
 - Chaat masala (optional)
 - Mayonnaise (optional)
 
-# Instructions
+## Instructions
 
 1. Peel the potatoes if desired, or leave the skin on for a rustic style.
 
@@ -46,7 +46,7 @@ description: "Golden, crispy air fryer French fries with very little oil. Crispy
 
 11. Serve immediately with your favorite dipping sauce.
 
-# Serving Suggestions
+## Serving Suggestions
 
 Serve with:
 - Tomato Ketchup
@@ -55,7 +55,7 @@ Serve with:
 - Garlic Mayonnaise
 - Cheese Dip
 
-# Notes
+## Notes
 
 - Soaking the potatoes is the secret to crispier fries.
 - Dry the potatoes thoroughly before adding oil—any moisture will reduce crispiness.

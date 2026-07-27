@@ -6,7 +6,7 @@ image: "/images/dalia.jpg"
 description: "A wholesome cracked wheat porridge cooked with fresh vegetables and finished with a fragrant tempering."
 ---
 
-# Ingredients
+## Ingredients
 
 - 1 cup dalia (cracked wheat)
 - 1 medium onion, finely chopped
@@ -16,7 +16,7 @@ description: "A wholesome cracked wheat porridge cooked with fresh vegetables an
 - Salt, to taste
 - ½ tsp turmeric powder
 
-## For the Tempering (Tadka)
+### For the Tempering (Tadka)
 
 - 1½ tbsp ghee or oil (divided)
 - ½ tsp cumin seeds
@@ -26,12 +26,12 @@ description: "A wholesome cracked wheat porridge cooked with fresh vegetables an
 - 1–2 dry red chilies
 - 2 garlic cloves, finely chopped (optional)
 
-## For Garnish (Optional)
+### For Garnish (Optional)
 
 - 1 tbsp chopped fresh coriander
 - Lemon wedges
 
-# Instructions
+## Instructions
 
 1. Add the dalia to the Air Fryer basket. Roast at **180°C for 5–7 minutes**, shaking the basket halfway through, until the dalia turns lightly golden and aromatic. Set aside.
 
@@ -59,7 +59,7 @@ description: "A wholesome cracked wheat porridge cooked with fresh vegetables an
 
 13. Garnish with chopped coriander and serve hot with a squeeze of fresh lemon juice, if desired.
 
-# Notes
+## Notes
 
 - Use **2½ cups water** for a fluffy, upma-style dalia.
 - Use **3 cups water** for a softer, porridge-style consistency.

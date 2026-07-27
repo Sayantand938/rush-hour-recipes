@@ -6,7 +6,7 @@ image: "/images/alur-dom.jpg"
 description: "A classic Bengali-style potato curry made with aromatic spices and cooked quickly in the Nutricook Smart Pot 2."
 ---
 
-# Ingredients
+## Ingredients
 
 - 500 g baby potatoes or 4–5 medium potatoes, peeled and halved
 - 2 medium onions, finely chopped
@@ -14,7 +14,7 @@ description: "A classic Bengali-style potato curry made with aromatic spices and
 - 1 tbsp ginger-garlic paste
 - 2 tbsp mustard oil (or any cooking oil)
 
-## Dry Spices
+### Dry Spices
 
 - 1 tsp cumin seeds
 - 1 bay leaf
@@ -22,7 +22,7 @@ description: "A classic Bengali-style potato curry made with aromatic spices and
 - 2 green cardamoms
 - 2 cloves
 
-## Spice Powders
+### Spice Powders
 
 - 1 tsp turmeric powder
 - 1 tsp Kashmiri red chili powder
@@ -32,12 +32,12 @@ description: "A classic Bengali-style potato curry made with aromatic spices and
 - Salt, to taste
 - 1 tsp sugar (optional)
 
-## For Garnish
+### For Garnish
 
 - 1 tbsp chopped fresh coriander
 - 1 tsp ghee (optional)
 
-# Instructions
+## Instructions
 
 1. Peel and wash the potatoes. If using medium potatoes, cut them into halves or large cubes.
 
@@ -69,7 +69,7 @@ description: "A classic Bengali-style potato curry made with aromatic spices and
 
 15. Stir in the garam masala and ghee (if using). Garnish with chopped coriander and serve hot.
 
-# Serving Suggestions
+## Serving Suggestions
 
 Serve hot with:
 - Steamed rice
@@ -77,7 +77,7 @@ Serve hot with:
 - Paratha
 - Roti
 
-# Notes
+## Notes
 
 - For richer flavor, fry the potatoes lightly before adding them to the curry.
 - Add ½ tsp Bengali bhaja moshla at the end for an authentic touch.

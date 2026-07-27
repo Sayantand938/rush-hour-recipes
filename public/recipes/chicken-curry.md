@@ -6,7 +6,7 @@ image: "/images/bengali-chicken-curry.jpg"
 description: "A classic Bengali-style chicken curry with potatoes, cooked in a rich onion-tomato gravy and finished with aromatic garam masala."
 ---
 
-# Ingredients
+## Ingredients
 
 - 1 kg chicken, cut into medium pieces (bone-in preferred)
 - 2 medium potatoes, peeled and halved (optional, but traditional)
@@ -19,7 +19,7 @@ description: "A classic Bengali-style chicken curry with potatoes, cooked in a r
 - Salt, to taste
 - 1 tsp sugar (optional)
 
-## Whole Spices
+### Whole Spices
 
 - 1 bay leaf
 - 1 tsp cumin seeds
@@ -27,7 +27,7 @@ description: "A classic Bengali-style chicken curry with potatoes, cooked in a r
 - 3 green cardamoms
 - 4 cloves
 
-## Spice Powders
+### Spice Powders
 
 - 1 tsp turmeric powder
 - 1½ tsp Kashmiri red chili powder
@@ -36,12 +36,12 @@ description: "A classic Bengali-style chicken curry with potatoes, cooked in a r
 - ½ tsp black pepper powder (optional)
 - 1 tsp garam masala
 
-## For Garnish
+### For Garnish
 
 - 1 tbsp chopped fresh coriander
 - 1 tsp ghee (optional)
 
-# Instructions
+## Instructions
 
 ### Marinate the Chicken
 
@@ -86,7 +86,7 @@ description: "A classic Bengali-style chicken curry with potatoes, cooked in a r
 
 18. Garnish with chopped coriander and serve hot.
 
-# Serving Suggestions
+## Serving Suggestions
 
 Serve hot with:
 
@@ -96,7 +96,7 @@ Serve hot with:
 - Paratha
 - Roti
 
-# Notes
+## Notes
 
 - Bone-in chicken gives the curry the best flavor.
 - Marinating the chicken for **1–2 hours** results in a more tender and flavorful curry.

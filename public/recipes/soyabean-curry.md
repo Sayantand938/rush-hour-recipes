@@ -6,7 +6,7 @@ image: "/images/soyabean-curry.jpg"
 description: "A hearty Bengali-style soyabean curry made with soya chunks in a rich onion-tomato gravy. High in protein, budget-friendly, and perfect with rice or roti."
 ---
 
-# Ingredients
+## Ingredients
 
 - 2 cups soya chunks
 - 1 medium potato, cut into cubes (optional)
@@ -18,7 +18,7 @@ description: "A hearty Bengali-style soyabean curry made with soya chunks in a r
 - Salt, to taste
 - 1 tsp sugar (optional)
 
-## Whole Spices
+### Whole Spices
 
 - 1 bay leaf
 - 1 tsp cumin seeds
@@ -26,7 +26,7 @@ description: "A hearty Bengali-style soyabean curry made with soya chunks in a r
 - 2 green cardamoms
 - 2 cloves
 
-## Spice Powders
+### Spice Powders
 
 - ½ tsp turmeric powder
 - 1 tsp Kashmiri red chili powder
@@ -34,12 +34,12 @@ description: "A hearty Bengali-style soyabean curry made with soya chunks in a r
 - ½ tsp cumin powder
 - ½ tsp garam masala
 
-## For Garnish
+### For Garnish
 
 - 1 tbsp chopped fresh coriander
 - 1 tsp ghee (optional)
 
-# Instructions
+## Instructions
 
 1. Bring about **4 cups of water** to a boil. Add the soya chunks and cook for **5 minutes**.
 
@@ -73,7 +73,7 @@ description: "A hearty Bengali-style soyabean curry made with soya chunks in a r
 
 16. Stir in the garam masala and ghee (if using). Garnish with chopped coriander and serve hot.
 
-# Serving Suggestions
+## Serving Suggestions
 
 Serve hot with:
 - Steamed Rice
@@ -81,7 +81,7 @@ Serve hot with:
 - Paratha
 - Luchi
 
-# Notes
+## Notes
 
 - Thoroughly squeezing the soya chunks after boiling is the key to removing their characteristic smell.
 - Potatoes are optional but are commonly added in Bengali-style soyabean curry.
