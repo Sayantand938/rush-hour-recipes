@@ -4,7 +4,6 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { ArrowLeft, LoaderCircle } from 'lucide-react';
 
-// Type for recipe metadata (same as in RecipeList)
 type RecipeMeta = {
     slug: string;
     title: string;
@@ -31,11 +30,9 @@ export function RecipeDetail() {
             return;
         }
 
-        // Helper to set title and fetch markdown
         const fetchRecipe = async (recipeTitle: string) => {
             try {
                 const url = `/recipes/${slug}.md`;
-                console.log(`[RecipeDetail] Fetching: ${url}`);
                 const res = await fetch(url);
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 const text = await res.text();
@@ -54,13 +51,11 @@ export function RecipeDetail() {
 
         // If we have recipe from state, use it immediately
         if (state?.recipe && state.recipe.slug === slug) {
-            console.log('[RecipeDetail] Using metadata from state:', state.recipe.title);
             fetchRecipe(state.recipe.title);
             return;
         }
 
         // Otherwise fetch manifest to get metadata
-        console.log('[RecipeDetail] No state, fetching manifest for metadata...');
         fetch('/data/manifest.json')
             .then((res) => {
                 if (!res.ok) throw new Error('Manifest not found');
@@ -68,15 +63,11 @@ export function RecipeDetail() {
             })
             .then((manifest: RecipeMeta[]) => {
                 const recipe = manifest.find((r) => r.slug === slug);
-                if (!recipe) {
-                    throw new Error('Recipe not found in manifest');
-                }
-                console.log('[RecipeDetail] Found metadata from manifest:', recipe.title);
+                if (!recipe) throw new Error('Recipe not found in manifest');
                 fetchRecipe(recipe.title);
             })
-            .catch((err) => {
-                console.error('[RecipeDetail] Error fetching manifest:', err);
-                // Fallback: use slug as title and try to load anyway
+            .catch(() => {
+                // Fallback: use slug as title
                 fetchRecipe(slug.replace(/-/g, ' '));
             });
     }, [slug, state]);
@@ -84,21 +75,35 @@ export function RecipeDetail() {
     if (loading) {
         return (
             <div className="flex min-h-[50vh] flex-col items-center justify-center gap-3">
-                <LoaderCircle className="size-8 animate-spin text-muted-foreground" strokeWidth={1.5} />
+                <LoaderCircle className="size-10 sm:size-8 animate-spin text-muted-foreground" strokeWidth={1.5} />
                 <p className="text-sm text-muted-foreground">Loading recipe...</p>
             </div>
         );
     }
 
     return (
-        <div className="container mx-auto max-w-3xl p-4">
-            <Link to="/" className="inline-flex items-center text-muted-foreground hover:underline">
-                <ArrowLeft className="mr-1 size-4" /> Back to all recipes
+        <div className="container mx-auto max-w-3xl px-6 sm:px-8 py-3 sm:py-6">
+            <Link
+                to="/"
+                className="inline-flex items-center text-sm sm:text-base text-muted-foreground hover:underline py-2 px-1 -ml-1 touch-manipulation"
+            >
+                <ArrowLeft className="mr-1 size-4 sm:size-5" /> Back to all recipes
             </Link>
 
-            <h1 className="mt-6 text-3xl font-bold tracking-tight">{title}</h1>
+            <h1 className="mt-4 text-2xl sm:text-3xl font-bold tracking-tight">
+                {title}
+            </h1>
 
-            <article className="prose prose-neutral dark:prose-invert mt-4 max-w-none">
+            <article
+                className="prose prose-neutral dark:prose-invert mt-4 max-w-none
+                prose-headings:font-semibold
+                prose-h1:text-2xl sm:prose-h1:text-3xl
+                prose-h2:text-xl sm:prose-h2:text-2xl
+                prose-p:text-base sm:prose-p:text-lg
+                prose-li:text-base sm:prose-li:text-lg
+                prose-ul:pl-4 sm:prose-ul:pl-6
+            "
+            >
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
             </article>
         </div>
